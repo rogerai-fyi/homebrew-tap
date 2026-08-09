@@ -3,7 +3,7 @@
 class Roger < Formula
   desc "Two-way radio for GPUs: consume and share LLM/voice models over the broker"
   homepage "https://rogerai.fm"
-  version "5.7.0"
+  version "5.7.1"
   # PolyForm Perimeter 1.0.0 — source-available, not an SPDX id, so `brew audit` can't
   # match it; :cannot_represent is Homebrew's blessed value for exactly this case.
   license :cannot_represent
@@ -11,22 +11,22 @@ class Roger < Formula
   on_macos do
     on_arm do
       url "https://github.com/rogerai-fyi/roger/releases/download/v#{version}/roger-darwin-arm64"
-      sha256 "1caa88b10c73704d9e3a580a1126a64b720f52ed35aef7c4ead1e8754b7e6e35"
+      sha256 "3b190362eea53041540a67a5a4b60dacc1a44e4ac24d270628277ad6953d74a9"
     end
     on_intel do
       url "https://github.com/rogerai-fyi/roger/releases/download/v#{version}/roger-darwin-amd64"
-      sha256 "a12639633f64bf00dacafb82096a82dfd823ad34b15f93714c90df8a900bad88"
+      sha256 "10f5b99995db5c46866479c49f50ff01b8fddd34507d644a54595c646cac1483"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/rogerai-fyi/roger/releases/download/v#{version}/roger-linux-arm64"
-      sha256 "a5cb8e1edec351e6c9d9a90dbb4da8278117827aa6f780fcf53ed65e22d6c0f8"
+      sha256 "3f0d99a9307918526cfb4015d64467ff3829f4ba5f41dc2d5d9e8c8e35a11a62"
     end
     on_intel do
       url "https://github.com/rogerai-fyi/roger/releases/download/v#{version}/roger-linux-amd64"
-      sha256 "56815bf4d2f6f9bd101618de425dd8b35b29027547748036c44ef7447de25cea"
+      sha256 "601d8d2ee2b8ef6178b9a49accca5a04922f918d1151fae081d54d74cb2d54e0"
     end
   end
 
